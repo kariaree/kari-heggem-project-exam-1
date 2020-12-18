@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NASA Hubble Telescope Project Home Page">
+    <meta name="keywords" content="hubble, telescope, hubble telescope, nasa, nasa hubble, nasa hubble telescope, space, telescope, esa, esa hubble, space telescope, galaxy, galaxy telescope, galaxy hubble telescope, career, career hubble, career nasa, career esa">
+    <title>Home Page | NASAs Hubble Telescope Project</title>
+    <script src="https://kit.fontawesome.com/b0b1d00e9c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#main-menu" id ="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        <h1 class="logo"><a href="index.html">NASA Hubble Telescope Project</a></h1>
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li><a class="active-page" href="index.html">Home</a></li>
+                <li><a href="about.html">About Hubble</a></li>
+                <li><a href="international.html">Hubble International</a></li>
+                <li><a href="career.html">Career</a></li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>
+    <div class="main-content">
+        <div class="header">
+            <div class="header-container">
+                <div class="header-img">
+                    <img class="home-page-header-img" src="img/hubble_tele.jpg" alt="Hubble telescope in space with earth in background">
+                </div>
+                <div class="header-line">
+                    <h1>NASA Hubble Telescope Project</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main-section main-home-page-section">
+            <section class="section-white">
+                <div class="frontpage-info">
+                    <h2>Time since launch</h2>
+                    <p>30 years 5 months 20 days</p>
+                    <p class="italics">Time since 24.april 1990</p>
+                </div>
+                <div class="frontpage-info">
+                    <h2>Current position</h2>
+                    <p>Latitude: <span id="latitude">-10.80</span> | Longitude: <span id="longitude">-29.55</span></p>
+                    <p>Timstamp: <span id="timestamp">95.4 min</span></p>
+                </div>
+            </section>
+            <section class="section-black">
+                <div class="frontpage-info">
+                    <h2>Become a part of the team - TODAY!</h2>
+                    <a class="anchor-link" href="career.html">Take me to Career Page</a>
+                </div>
+            </section>
+            <section class="section-white">
+                <div class="frontpage-info">
+                    <h2>Astronomy Picture of the Day</h2>
+                    <p class="italics">Not always a picture taken by the Hubble Telescope</p>
+                    <img id="todays-image" src="" alt="Image of the day from NASA">
+                    <h3 id="todays-image-title">Image Title</h3>
+                    <p>Taken by: <span id="copyright">Copyright Name</span></p>
+                    <p id="todays-date">Today's Date</p>
+                </div>
+            </section>
+            <section class="section-black">
+                <div class="timeline">
+                    <div class="timeline-years">
+                        <button class="timeline-year tab-link timeline-year-active" onclick="openInfo(event, 'year-1990')">1990</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-1994')">1994</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-1997')">1997</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-2002')">2002</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-2006')">2006</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-2016')">2016</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-2018')">2018</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-2019')">2019</button>
+                        <button class="timeline-year tab-link" onclick="openInfo(event, 'year-2020')">2020</button>
+                    </div>
+                    <div id="year-1990" class="timeline-content">
+                        <img class="timeline-image" src="img/hubble_1990.jpg" alt="First pictures taken by the Bubble Telescope">
+                        <div class="timeline-paragraphs">
+                            <p>The first picture taken from the Hubble Telescope in May 1990 was compared to a picture taken of the same region of the sky from Las Campanas Observaroty in Chile. 
+                            </p>
+                            <p>You see clearly that the telescope’s resolution was much better than the group based observatories.
+                            </p>
+                            <p class="resource">Resource: https://www.nasa.gov/content/hubbles-first-light
+                            </p>
+                        </div>
+                    </div>
+                    <div id="year-1994" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_1994.jpg" alt="Gad disc in M87 which are evidences of there can exist supermassive black holes">
+                        <div class="timeline-paragraphs">
+                            <p>Hubble Telescope has found evidence that there is a massive black hole in the center of the elliptical galaxy M87. This galaxy is located 50 million light-years from earth. 
+                            </p>
+                            <p>There were observations which supported this idea for the exitence of gravitationally collapsed objects. Albert Einstein’s theory of relativity for instance, supported this heavily. 
+                            </p>
+                            <p>A massive black hole is so enormous and compact that nothing can escape - not even light.
+                            </p>
+                            <p class="resource">Resource: https://hubblesite.org/contents/news-releases/1994/news-1994-23.html</p>
+                        </div>
+                    </div>
+                    <div id="year-1997" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_1997.jpg" alt="Hubble Telescope catches the inide of Orion Nebula">
+                        <div class="timeline-paragraphs">
+                            <p>After a huge maintenance service on the Hubble Telescope, the image quality was improved. The new infrared vision could now capture the Orion Nebula, which is the nearest nursery for massive stars.
+                            </p>
+                            <p>Hubble’s infrared camera reveals a chaotic and active star birth region. The stars and the glowing interstellar dust, heated by and scattering the intense starlight, appear yellow-orange.
+                            </p>
+                            <p class="resource">Resource: https://hubblesite.org/contents/news-releases/1997/news-1997-13.html
+                            </p>
+                        </div>
+                    </div>
+                    <div id="year-2002" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_2002.jpg" alt="Hubble Telescope catches a phenonemon where a star became several houndred times more luminous">
+                        <div class="timeline-paragraphs">
+                            <p>A dull star suddenaly became a several houndred times more luminous than our sun. The was by that time the brightest stars in the milky way. 
+                            </p>
+                            <p>This star, called the V838 Monocerotis have since then faded back to its regular state. 
+                            </p>
+                            <p>The phenomenon was called a «light echo». These details promise to prove astronomers with a CAT-scan-like probe of the 3D structure of shell of dust surrounding an aging star.
+                            </p>
+                            <p class="resource">Resource: https://hubblesite.org/contents/news-releases/2003/news-2003-10.html</p>    
+                        </div>
+                    </div>
+                    <div id="year-2006" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_2006.jpg" alt="NASA finds proof of dark matter through Hubble Telescope">
+                        <div class="timeline-paragraphs">
+                            <p>Hot gasses detected by Chandra in X-rays is seen as two pink clumps in the image and contains most of the «normal» matter in the two clusters. The dark matter and the normal matter must have been wrenched apart by the enormous collision of two large clusters of galaxies.
+                            </p>
+                            <p>An optical image from Magellan and the Hubble Space Telescope shows the galaxies in orange and white.
+                            </p>
+                            <p class="resource">Resource: https://hubblesite.org/contents/news-releases/2006/news-2006-39.html</p>    
+                        </div>
+                   </div>
+                    <div id="year-2016" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_2016.jpg" alt="NASA's Hubble Captures the Beating Heart of the Crab Nebula">
+                        <div class="timeline-paragraphs">
+                            <p>Crab nebula’s beating heart is the most historic and intensively studied remnants of a supernova. The inner region sends out charged particles embedded in magnetic fields. 
+                            </p>
+                            <p>Our sun has the same mass as the neutron star at very center of the Crab Nebula.It’s copreddes into an incredibly dense sphere that’s only a few miles across.
+                            </p>
+                            <p>The centre spins 30 times a second, so the neutron shoots ou detectable beams of energy and makes illusions of the neutron is pulsating. 
+                            </p>
+                            <p class="resource">Resource: https://www.nasa.gov/feature/goddard/2016/nasas-hubble-captures-the-beating-heart-of-the-crab-nebula</p>    
+                        </div>
+                       </div>
+                    <div id="year-2018" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_2018.jpg" alt="All the Glittering Stars taken">
+                        <div class="timeline-paragraphs">
+                            <p>The Hubble Telescope captured in 2018 this beautiful image of the heart of the Milky Way galaxy.
+                            </p>
+                            <p>The older red giant stars live alongside their many younger, white sun-like stars. This region of the galaxy is crowded with these. The blue stars are recently formed stars and are located in the foreground. 
+                            </p>
+                            <p>Astronomers studied 10,000 of these Sun-like stars in archival Hubble images over a nine-year period to unearth clues to our galaxy’s evolution.
+                            </p>
+                            <p>The study revealed that the Milky Way’s bulge is a dynamic environment of variously aged stars zipping around at different speeds, like travelers bustling about a busy airport.
+                            </p>
+                            <p class="resource">Resource: https://www.nasa.gov/image-feature/all-the-glittering-stars
+                            </p>
+                        </div>
+                    </div>
+                    <div id="year-2019" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_2019.jpg" alt="Mystic Mountain of Carina Nebula">
+                        <div class="timeline-paragraphs">
+                            <p>Within the tempestuous Carina Nebula lies “Mystic Mountain.” This three-light-year-tall cosmic pinnacle, imaged by the Hubble Space Telescope’s Wide Field Camera 3, is made up primarily of dust and gas, and exhibits signs of intense star-forming activity. The colors in this composite image correspond to the glow of oxygen (blue), hydrogen and nitrogen (green) and sulfur (red).
+                            </p>
+                            <p class="resource">Resource: https://www.nasa.gov/image-feature/carina-nebulas-mystic-mountain</p>    
+                        </div>
+                    </div>
+                    <div id="year-2020" class="timeline-content" style="display: none;">
+                        <img class="timeline-image" src="img/hubble_2020.jpg" alt="Hubble Telescope captures a Special Stellar Nursery">
+                        <div class="timeline-paragraphs">
+                            <p>This is a special glass of star-forming nursery known as free-floating evaporations gaseous globuses.
+                            </p>
+                            <p>Energetic radiation ionize the cloud’s hydrogen and can crate a large hot bubble of ionized gas. This is how a massive new star starts to shine while its within the cool molecular gas cloud.
+                            </p>
+                            <p class="resource">Resource: https://www.nasa.gov/image-feature/goddard/2020/hubble-snaps-a-special-stellar-nursery/</p>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-link-list">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">Aboute Hubble</a>
+                        <a href="international.html">Hubble International</a>
+                        <a href="career.html">Career</a>
+                    </div>
+                    <h1>NASA Hubble Telescope Project</h1>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>                                     

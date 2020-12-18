@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Careers in the NASA Hubble Telescope Project">
+    <meta name="keywords" content="hubble, telescope, hubble telescope, nasa, nasa hubble, about, about hubble, about nasa hubble, about nasa hubble telescope, nasa hubble telescope, space, telescope, space telescope, galaxy, galaxy telescope, galaxy hubble telescope, career, career hubble, career nasa, career esa">
+    <title>Careers | NASAs Hubble Telescope Project</title>
+    <script src="https://kit.fontawesome.com/b0b1d00e9c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#main-menu" id ="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        <h1 class="logo"><a href="index.html">NASA Hubble Telescope Project</a></h1>
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Hubble</a></li>
+                <li><a href="international.html">Hubble International</a></li>
+                <li><a class="active-page" href="career.html">Career</a></li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>
+    <div class="main-content">
+        <div class="header">
+            <div class="header-container">
+                <div class="header-img career-header-img-container">
+                    <img class="career-header-image" src="img/hubble_planet.jpg" alt="Contoure of Hubble Telescope in front of the moon">
+                </div>
+                <div class="header-line">
+                    <h1>Career</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main-section about-main-section">
+            <section class="section-black">
+                <div class="section-content">
+                    <h2>Vacant Position</h2>
+                    <table class="vacant-positions-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Position</th>
+                                <th scope="col">Location</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="position-rows">
+                            <tr>
+                                <th>Astronaut for next Mars Mission</th>
+                                <th>Houston, TX</th>
+                                <th><button>Apply</button></th>
+                            </tr>
+                            <tr>
+                                <th>Developer for ESA Information Hubble Site</th>
+                                <th>Milan, Italy</th>
+                                <th><button>Apply</button></th>
+                            </tr>
+                            <tr>
+                                <th>Purchaser for Hubble Telescope Maintenance Program</th>
+                                <th>Budapest, Hungary</th>
+                                <th><button>Apply</button></th>
+                            </tr>
+                            <tr>
+                                <th>Chief in Operations - Northern Observatory</th>
+                                <th>Hammerfest, Norway</th>
+                                <th><button>Apply</button></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="section-white">
+                <div class="section-application-form section-content">
+                    <div class="content-red-box">
+                        <h2>Submit Open Application</h2>
+                        <p>It suddenly struck me that that tiny pea, pretty and blue, 
+                            was the Earth. I put up my thumb and shut one eye, and my 
+                            thumb blotted out the planet Earth. I didn’t feel like a 
+                            giant. I felt very, very small.
+                        </p>
+                        <p>Science has not yet mastered prophecy. We predict too much 
+                            for the next year and yet far too little for the next 10.
+                        </p>
+                    </div>
+                    <div class="form-content">
+                        <form action=""  method="get" class="application-form">
+                            <div class="form-group">  
+                                <label for="name">Name<span class="asterics">*</span></label>
+                                <input type="text" name="name" id="name" required><span class="missing-element">X</span>
+                            </div>
+                            <div class="form-group">  
+                                <label for="email">E-mail<span class="asterics">*</span></label>
+                                <input type="email" name="email" id="email" required><span class="missing-element">X</span>
+                                <p class="missing-element">Invalid email</p>
+                            </div>
+                            <div class="form-group">  
+                                <label for="locations">Working Locations</label>
+                                <div class="location-selection-group">
+                                    <select name="locations" id="locations" multiple>
+                                        <option value="houston" id="houston">Houston, TX</option>
+                                        <option value="milan" id="milan">Milan, Italy</option>
+                                        <option value="budapest" id="budapest">Budapest, Hungary</option>
+                                        <option value="hammerfest" id="hammerfest">Hammerfest, Norway</option>
+                                        <option value="atlanta" id="atlanta">Atlanta, GA</option>
+                                    </select>
+                                    <p>Hold down the ctrl (win) or cmd (mac) button to select multiple options.</p>
+                                </div>
+                             </div>
+                            <div class="form-group">  
+                                <label for="documents">Upload Documents</label>
+                                <div class="upload-document-section">
+                                    <div class="upload-document">                                
+                                        <label for="application">Application Letter:</label>
+                                        <input type="file"
+                                            id="application" name="applicaiton"
+                                            accept=".pdf">
+                                    </div>
+                                    <div class="upload-document">
+                                        <label for="CV">CV:</label>
+                                        <input type="file"
+                                            id="cv" name="cv"
+                                            accept=".pdf" >
+                                    </div>
+                                    <p>Acceptable filetype: pdf</p>
+                                    <p><span class="asterics">*</span> is required</p>
+                                </div>
+                            </div>
+                            <div class="form-group">  
+                                <a class="empty-form" href="">Empty Form</a>
+                                <input value="Submit Application" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-black section-front">
+                <div class="section-content">
+                    <h2>Sign up for Vacant Position</h2>
+                    <div class="content-update-form">
+                        <div>
+                            <p>Waiting for a special position?</p>
+                            <p>Sign up to get the latest positings in your mailbox</p>
+                        </div>
+                        <form class="update-form" action="">
+                            <input class="update-form-email-address" type="email">
+                            <input type="submit" value="Sign up for updates">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-black confirmation-message-section">
+                <div class="confirmation-message-container">
+                    <div class="confirmation-message">
+                        <p id="message">Application submitted</p>
+                        <button>Close</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-link-list">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">Aboute Hubble</a>
+                        <a href="international.html">Hubble International</a>
+                        <a href="career.html">Career</a>
+                    </div>
+                    <h1>NASA Hubble Telescope Project</h1>
+                </div>
+            </footer>
+        </div>
+      
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
